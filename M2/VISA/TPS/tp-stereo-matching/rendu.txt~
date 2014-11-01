@@ -1,0 +1,111 @@
+seuil = 0.5 nbHomolgues = 2
+seuil = 1.0 nbHomolgues = 10
+seuil = 1.5 nbHomolgues = 14
+seuil = 2.0 nbHomolgues = 16
+seuil = 2.5 nbHomolgues = 16
+seuil = 3.0 nbHomolgues = 17
+seuil = 3.5 nbHomolgues = 18
+seuil = 4.0 nbHomolgues = 20
+
+
+// -----------------------------------------------------------------------
+/// \brief Detecte les coins.
+///
+/// @param mImage: pointeur vers la structure image openCV
+/// @param iMaxCorners: nombre maximum de coins detectes
+/// @return matrice des coins
+// -----------------------------------------------------------------------
+Mat iviDetectCorners(const Mat& mImage,
+                     int iMaxCorners){
+    vector<Point2f> vCorners;
+
+    goodFeaturesToTrack(mImage,vCorners,iMaxCorners,0.01,10,Mat(),3,false,0.04);
+    Mat mCorners(3,vCorners.size(),CV_64F);
+    for(int i=0;i<vCorners.size();i++){
+        mCorners.at<double>(0,i)=(double)vCorners[i].x;
+        mCorners.at<double>(1,i)=(double)vCorners[i].y;
+        mCorners.at<double>(2,i)=1;
+    }
+    return mCorners;
+}
+
+Mat iviVectorProductMatrix(const Mat& v) {
+
+    Mat mVectorProduct = Mat::eye(3, 3, CV_64F);
+
+    mVectorProduct.at<double>(0,0) = (double)0.0;
+    mVectorProduct.at<double>(0,1) = -v.at<double>(2,0);
+    mVectorProduct.at<double>(0,2) = v.at<double>(1,0);
+
+    mVectorProduct.at<double>(1,0) = v.at<double>(2,0);
+    mVectorProduct.at<double>(1,1) = (double)0.0;
+    mVectorProduct.at<double>(1,2) = -v.at<double>(0,0);
+
+    mVectorProduct.at<double>(2,0) = -v.at<double>(1,0);
+    mVectorProduct.at<double>(2,1) = v.at<double>(0,0);
+    mVectorProduct.at<double>(2,2) = (double)0.0;
+
+    return mVectorProduct;
+}
+
+Mat iviFundamentalMatrix(const Mat& mLeftIntrinsic,
+                         const Mat& mLeftExtrinsic,
+                         const Mat& mRightIntrinsic,
+                         const Mat& mRightExtrinsic) {
+    // Doit utiliser la fonction iviVectorProductMatrix
+    Mat mFundamental = Mat::eye(3, 3, CV_64F);
+
+    Mat pLeft = mLeftIntrinsic * Mat::eye(3, 4, CV_64F) * mLeftExtrinsic;
+    Mat pRight = mRightIntrinsic * Mat::eye(3, 4, CV_64F) * mRightExtrinsic;
+
+    Mat o1 = mLeftExtrinsic.inv().col(3);
+    Mat a = pRight*o1;
+    Mat b = pRight*pLeft.inv(DECOMP_SVD);
+
+    mFundamental = iviVectorProductMatrix(a)*b;
+
+    return mFundamental;
+}
+
+Mat iviDistancesMatrix(const Mat& m2DLeftCorners,
+                       const Mat& m2DRightCorners,
+                       const Mat& mFundamental){
+    double x1,y1,z1,x2,y2,z2,d1,d2;
+    Mat epiDroite,epiGauche,point1,point2;
+    int widthL,widthR;
+
+    widthL = m2DLeftCorners.size().width;
+    widthR = m2DRightCorners.size().width;
+
+    Mat mDistances(widthL,widthR,CV_64F);
+
+    for(int i=0;i<widthL;i++){
+
+          x1 = m2DLeftCorners.at<double>(0,i);
+          y1 = m2DLeftCorners.at<double>(1,i);
+          z1 = m2DLeftCorners.at<double>(2,i);
+
+          point1 = (Mat_<double>(3,1) << x1,y1,z1);
+
+          epiDroite = mFundamental*point1;
+
+          for(int j=0;j<widthR;j++){
+
+               x2 = m2DRightCorners.at<double>(0,j);
+               y2 = m2DRightCorners.at<double>(1,j);
+               z2 = m2DRightCorners.at<double>(2,j);
+
+               point2 = (Mat_<double>(3,1) << x2,y2,z2);
+               epiGauche = mFundamental.t()*point2;
+
+               d1 = abs(epiDroite.at<double>(0,0)*x2+epiDroite.at<double>(1,0)*y2+epiDroite.at<double>(2,0))/
+                    (sqrt(epiDroite.at<double>(0,0)*epiDroite.at<double>(0,0)+epiDroite.at<double>(1,0)*epiDroite.at<double>(1,0)));
+
+               d2 = abs(epiGauche.at<double>(0,0)*x1+epiGauche.at<double>(1,0)*y1+epiGauche.at<double>(2,0))/
+                    (sqrt(epiGauche.at<double>(0,0)*epiGauche.at<double>(0,0)+epiGauche.at<double>(1,0)*epiGauche.at<double>(1,0)));
+
+               mDistances.at<double>(i,j)=d1+d2;
+          }
+    }
+    return mDistances;
+}

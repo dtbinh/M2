@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1322906391 source:/home/m2ivi/naitabdelaziz/Documents/VISA/tp-stereo-matching/glue.cpp
+	<stdio.h>
+	<opencv2/core/core.hpp>
+	"glue.hpp"
+
+1322906391 /home/m2ivi/naitabdelaziz/Documents/VISA/tp-stereo-matching/glue.hpp
+
+1411560403 source:/home/m2ivi/naitabdelaziz/Documents/VISA/tp-stereo-matching/stereo-matching.cpp
+	<stdio.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/calib3d/calib3d.hpp>
+	<getopt.h>
+	"glue.hpp"
+	"yanis-naitabdelaziz.hpp"
+
+1410963378 /home/m2ivi/naitabdelaziz/Documents/VISA/tp-stereo-matching/yanis-naitabdelaziz.hpp
+
+1411559381 source:/home/m2ivi/naitabdelaziz/Documents/VISA/tp-stereo-matching/yanis-naitabdelaziz.cpp
+	<stdio.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<opencv2/highgui/highgui.hpp>
+	"glue.hpp"
+	"yanis-naitabdelaziz.hpp"
+	<iostream>
+
+1322906391 source:/home/yanis/Documents/M2/VISA/TPS/tp-stereo-matching/glue.cpp
+	<stdio.h>
+	<opencv2/core/core.hpp>
+	"glue.hpp"
+
+1322906391 /home/yanis/Documents/M2/VISA/TPS/tp-stereo-matching/glue.hpp
+
+1411588167 source:/home/yanis/Documents/M2/VISA/TPS/tp-stereo-matching/stereo-matching.cpp
+	<stdio.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/calib3d/calib3d.hpp>
+	<getopt.h>
+	"glue.hpp"
+	"yanis-naitabdelaziz.hpp"
+
+1410963378 /home/yanis/Documents/M2/VISA/TPS/tp-stereo-matching/yanis-naitabdelaziz.hpp
+
+1411586361 source:/home/yanis/Documents/M2/VISA/TPS/tp-stereo-matching/yanis-naitabdelaziz.cpp
+	<stdio.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<opencv2/highgui/highgui.hpp>
+	"glue.hpp"
+	"yanis-naitabdelaziz.hpp"
+	<iostream>
+

@@ -1,0 +1,1688 @@
+Archive member included because of file (symbol)
+
+uC-sdk/arch/libarch.a(startup.o)
+                              (__cs3_stack_size)
+uC-sdk/arch/libarch.a(handlers.o)
+                              uC-sdk/arch/libarch.a(startup.o) (general_C_handler)
+uC-sdk/arch/libarch.a(init.o)
+                              (__som)
+uC-sdk/arch/libarch.a(BoardInit.o)
+                              uC-sdk/arch/libarch.a(handlers.o) (BoardExceptionHandler)
+uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+                              uC-sdk/arch/libarch.a(init.o) (SystemInit)
+uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+                              uC-sdk/arch/libarch.a(init.o) (DAC_DeInit)
+uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+                              uC-sdk/arch/libarch.a(init.o) (EXTI_DeInit)
+uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+                              uC-sdk/arch/libarch.a(init.o) (PWR_DeInit)
+uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+                              uC-sdk/arch/libarch.a(init.o) (RCC_DeInit)
+uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+                              uC-sdk/arch/libarch.a(init.o) (SDIO_DeInit)
+uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+                              uC-sdk/arch/libarch.a(init.o) (WWDG_DeInit)
+uC-sdk/arch/libarch.a(misc.o)
+                              uC-sdk/arch/libarch.a(init.o) (NVIC_SetVectorTable)
+uC-sdk/os/libos.a(init.o)     uC-sdk/arch/libarch.a(startup.o) (_start)
+uC-sdk/os/libos.a(osdebug.o)  uC-sdk/arch/libarch.a(handlers.o) (osDbgPrintf)
+uC-sdk/libc/libc.a(initfini.o)
+                              uC-sdk/os/libos.a(init.o) (exit)
+uC-sdk/libc/libc.a(stdio.o)   uC-sdk/libc/libc.a(initfini.o) (__sinit)
+uC-sdk/libc/libc.a(reent.o)   uC-sdk/libc/libc.a(initfini.o) (_impure_ptr)
+uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+                              test.o (gpio_config)
+uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                              uC-sdk/arch/libarch.a(startup.o) (SVC_Handler)
+uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+                              uC-sdk/FreeRTOS/libFreeRTOS.a(port.o) (xTaskIncrementTick)
+uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+                              uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o) (xTimerCreateTimerTask)
+uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+                              uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o) (pvPortMalloc)
+uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+                              uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o) (vListInitialise)
+uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+                              uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o) (xQueueGenericCreate)
+uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+                              uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o) (GPIO_Init)
+uC-sdk/arch/libarch.a(BoardConsole.o)
+                              uC-sdk/os/libos.a(init.o) (BoardConsoleInit)
+uC-sdk/os/libos.a(hooks.o)    uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o) (vApplicationTickHook)
+uC-sdk/libc/libc.a(malloc.o)  uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o) (free)
+uC-sdk/os/libos.a(sbrk.o)     uC-sdk/libc/libc.a(malloc.o) (sbrk)
+uC-sdk/libc/libc.a(errno.o)   uC-sdk/os/libos.a(sbrk.o) (errno)
+
+Allocating common symbols
+Common symbol       size              file
+
+xQueueRegistry      0x40              uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+ .data          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+ .bss           0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+ .text          0x00000000        0x0 test.o
+ .data          0x00000000        0x0 test.o
+ .bss           0x00000000        0x0 test.o
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(startup.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(startup.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(startup.o)
+ .ARM.extab.cs3.reset
+                0x00000000        0x0 uC-sdk/arch/libarch.a(startup.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(handlers.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(handlers.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(handlers.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(init.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(init.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(init.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(BoardInit.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(BoardInit.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(BoardInit.o)
+ .text.BoardShutdown
+                0x00000000        0x2 uC-sdk/arch/libarch.a(BoardInit.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_Init
+                0x00000000       0x2c uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_StructInit
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_Cmd  0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_SoftwareTriggerCmd
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_DualSoftwareTriggerCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_WaveGenerationCmd
+                0x00000000       0x1c uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_SetChannel1Data
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_SetChannel2Data
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_SetDualChannelData
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_GetDataOutputValue
+                0x00000000       0x24 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_DMACmd
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_ITConfig
+                0x00000000       0x1c uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_GetFlagStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_ClearFlag
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_GetITStatus
+                0x00000000       0x1c uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text.DAC_ClearITPendingBit
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_Init
+                0x00000000       0x84 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_StructInit
+                0x00000000        0xe uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_GenerateSWInterrupt
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_GetFlagStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_ClearFlag
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_GetITStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text.EXTI_ClearITPendingBit
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_BackupAccessCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_PVDLevelConfig
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_PVDCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_WakeUpPinCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_BackupRegulatorCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_MainRegulatorModeConfig
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_OverDriveCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_OverDriveSWCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_UnderDriveCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_FlashPowerDownCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_EnterSTOPMode
+                0x00000000       0x38 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_EnterUnderDriveSTOPMode
+                0x00000000       0x38 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_EnterSTANDBYMode
+                0x00000000       0x28 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_GetFlagStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text.PWR_ClearFlag
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_HSEConfig
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_HSICmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_LSEConfig
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_LSICmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLConfig
+                0x00000000       0x20 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLI2SConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLI2SCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLSAIConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PLLSAICmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_MCO1Config
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_MCO2Config
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_SYSCLKConfig
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_GetSYSCLKSource
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_HCLKConfig
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PCLK1Config
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_PCLK2Config
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_GetClocksFreq
+                0x00000000       0x88 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_RTCCLKConfig
+                0x00000000       0x30 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_RTCCLKCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_BackupResetCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_I2SCLKConfig
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIPLLI2SClkDivConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIPLLSAIClkDivConfig
+                0x00000000       0x1c uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIBlockACLKConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_SAIBlockBCLKConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_LTDCCLKDivConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_TIMCLKPresConfig
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB2PeriphClockCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB3PeriphClockCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_APB1PeriphClockCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_APB2PeriphClockCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB1PeriphResetCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB2PeriphResetCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB3PeriphResetCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB1PeriphClockLPModeCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB2PeriphClockLPModeCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_AHB3PeriphClockLPModeCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_APB1PeriphClockLPModeCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_APB2PeriphClockLPModeCmd
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_ITConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_GetFlagStatus
+                0x00000000       0x28 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_WaitForHSEStartUp
+                0x00000000       0x30 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_ClearFlag
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_GetITStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text.RCC_ClearITPendingBit
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .data.APBAHBPrescTable
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_Init
+                0x00000000       0x30 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_StructInit
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_ClockCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_SetPowerState
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetPowerState
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_SendCommand
+                0x00000000       0x2c uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_CmdStructInit
+                0x00000000        0xe uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetCommandResponse
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetResponse
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_DataConfig
+                0x00000000       0x2c uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_DataStructInit
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetDataCounter
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_ReadData
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_WriteData
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetFIFOCount
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_StartSDIOReadWait
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_StopSDIOReadWait
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_SetSDIOReadWaitMode
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_SetSDIOOperation
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_SendSDIOSuspendCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_CommandCompletionCmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_CEATAITCmd
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_SendCEATACmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_DMACmd
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_ITConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetFlagStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_ClearFlag
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_GetITStatus
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text.SDIO_ClearITPendingBit
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_SetPrescaler
+                0x00000000       0x14 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_SetWindowValue
+                0x00000000       0x28 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_EnableIT
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_SetCounter
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_Enable
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_GetFlagStatus
+                0x00000000       0x10 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text.WWDG_ClearFlag
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(misc.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(misc.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(misc.o)
+ .text.NVIC_PriorityGroupConfig
+                0x00000000       0x14 uC-sdk/arch/libarch.a(misc.o)
+ .text.NVIC_Init
+                0x00000000       0x6c uC-sdk/arch/libarch.a(misc.o)
+ .text.NVIC_SystemLPConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(misc.o)
+ .text.SysTick_CLKSourceConfig
+                0x00000000       0x18 uC-sdk/arch/libarch.a(misc.o)
+ .text          0x00000000        0x0 uC-sdk/os/libos.a(init.o)
+ .data          0x00000000        0x0 uC-sdk/os/libos.a(init.o)
+ .bss           0x00000000        0x0 uC-sdk/os/libos.a(init.o)
+ .text._exit    0x00000000        0xe uC-sdk/os/libos.a(init.o)
+ .text          0x00000000        0x0 uC-sdk/os/libos.a(osdebug.o)
+ .data          0x00000000        0x0 uC-sdk/os/libos.a(osdebug.o)
+ .bss           0x00000000        0x0 uC-sdk/os/libos.a(osdebug.o)
+ .text          0x00000000        0x0 uC-sdk/libc/libc.a(initfini.o)
+ .data          0x00000000        0x0 uC-sdk/libc/libc.a(initfini.o)
+ .bss           0x00000000        0x0 uC-sdk/libc/libc.a(initfini.o)
+ .text.atexit   0x00000000       0x3c uC-sdk/libc/libc.a(initfini.o)
+ .text          0x00000000        0x0 uC-sdk/libc/libc.a(stdio.o)
+ .data          0x00000000        0x0 uC-sdk/libc/libc.a(stdio.o)
+ .bss           0x00000000        0x0 uC-sdk/libc/libc.a(stdio.o)
+ .text          0x00000000        0x0 uC-sdk/libc/libc.a(reent.o)
+ .data          0x00000000        0x0 uC-sdk/libc/libc.a(reent.o)
+ .bss           0x00000000        0x0 uC-sdk/libc/libc.a(reent.o)
+ .text          0x00000000        0x0 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .data          0x00000000        0x0 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .bss           0x00000000        0x0 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .text.get_port
+                0x00000000        0x4 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .text.get_pin  0x00000000        0x4 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .text          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .data          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .bss           0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.prvPortStartFirstTask
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortEnableVFP
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.pxPortInitialiseStack
+                0x00000000       0x24 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortEndScheduler
+                0x00000000        0x2 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortYield
+                0x00000000       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.prvTaskExitError
+                0x00000000       0x1c uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortEnterCritical
+                0x00000000       0x1c uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortExitCritical
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortSetupTimerInterrupt
+                0x00000000       0x24 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.xPortStartScheduler
+                0x00000000       0xa4 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text.vPortValidateInterruptPriority
+                0x00000000       0x44 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .bss.ucMaxSysCallPriority
+                0x00000000        0x1 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .bss.ulMaxPRIGROUPValue
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .data.uxCriticalNesting
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .text          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .data          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss           0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.prvAddCurrentTaskToDelayedList
+                0x00000000       0x50 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskGenericCreate
+                0x00000000      0x19c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskDelete
+                0x00000000       0x6c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.uxTaskPriorityGet
+                0x00000000       0x1c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskPrioritySet
+                0x00000000       0xa4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskIsTaskSuspended
+                0x00000000       0x30 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskResume
+                0x00000000       0x6c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskResumeFromISR
+                0x00000000       0x84 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskStartScheduler
+                0x00000000       0x5c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskEndScheduler
+                0x00000000       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskSuspendAll
+                0x00000000       0x10 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskGetTickCount
+                0x00000000       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskGetTickCountFromISR
+                0x00000000       0x1c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0xc uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskResumeAll
+                0x00000000       0xc8 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskDelayUntil
+                0x00000000       0x6c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskDelay
+                0x00000000       0x3c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.prvIdleTask
+                0x00000000       0x64 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskSuspend
+                0x00000000       0x70 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskPlaceOnEventList
+                0x00000000       0x4c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskPlaceOnEventListRestricted
+                0x00000000       0x34 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskRemoveFromEventList
+                0x00000000       0x74 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskSetTimeOutState
+                0x00000000       0x20 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskCheckForTimeOut
+                0x00000000       0x5c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskMissedYield
+                0x00000000        0xc uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskGetCurrentTaskHandle
+                0x00000000        0xc uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.xTaskGetSchedulerState
+                0x00000000       0x1c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskPriorityInherit
+                0x00000000       0x68 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text.vTaskPriorityDisinherit
+                0x00000000       0x48 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xSuspendedTaskList
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xSchedulerRunning
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.uxTasksDeleted
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xTasksWaitingTermination
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xDelayedTaskList2
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xPendingReadyList
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .rodata.str1.1
+                0x00000000        0x5 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.uxTaskNumber
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xDelayedTaskList1
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.uxCurrentNumberOfTasks
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .text          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .data          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss           0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.prvCheckForValidListAndQueue
+                0x00000000       0x4c uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.prvInsertTimerInActiveList
+                0x00000000       0x3c uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.xTimerCreateTimerTask
+                0x00000000       0x44 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.xTimerCreate
+                0x00000000       0x3e uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.xTimerGenericCommand
+                0x00000000       0x44 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.prvSwitchTimerLists.isra.1
+                0x00000000       0x68 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.prvTimerTask
+                0x00000000      0x15c uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.xTimerIsTimerActive
+                0x00000000       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text.pvTimerGetTimerID
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss.pxCurrentTimerList
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss.xActiveTimerList1
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss.xActiveTimerList2
+                0x00000000       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .rodata.str1.1
+                0x00000000        0x8 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss.xLastTime.8031
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss.xTimerQueue
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .bss.pxOverflowTimerList
+                0x00000000        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .text          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .data          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .bss           0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .text.pvPortMalloc
+                0x00000000       0x20 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .text.vPortFree
+                0x00000000       0x20 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .text          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .data          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .bss           0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .text.vListInitialise
+                0x00000000       0x16 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .text.vListInitialiseItem
+                0x00000000        0x6 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .text.vListInsert
+                0x00000000       0x30 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .text          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .data          0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .bss           0x00000000        0x0 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.prvUnlockQueue
+                0x00000000       0x64 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.prvCopyDataFromQueue
+                0x00000000       0x28 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.prvCopyDataToQueue
+                0x00000000       0x74 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueGenericReset
+                0x00000000       0x62 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueGenericCreate
+                0x00000000       0x3c uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueCreateCountingSemaphore
+                0x00000000       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueGenericSend
+                0x00000000      0x100 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueCreateMutex
+                0x00000000       0x4a uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueGiveMutexRecursive
+                0x00000000       0x32 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueGenericSendFromISR
+                0x00000000       0x84 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueGenericReceive
+                0x00000000      0x11a uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueTakeMutexRecursive
+                0x00000000       0x3a uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueReceiveFromISR
+                0x00000000       0x6a uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueuePeekFromISR
+                0x00000000       0x44 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x1a uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x1e uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0xe uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000       0x16 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.xQueueIsQueueFullFromISR
+                0x00000000       0x16 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.vQueueAddToRegistry
+                0x00000000       0x24 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.vQueueUnregisterQueue
+                0x00000000       0x24 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.vQueueDelete
+                0x00000000       0x20 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text.vQueueWaitForMessageRestricted
+                0x00000000       0x3a uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ COMMON         0x00000000       0x40 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_DeInit
+                0x00000000      0x10c uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_StructInit
+                0x00000000       0x12 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_PinLockConfig
+                0x00000000       0x24 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_ReadInputData
+                0x00000000        0x6 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_ReadOutputDataBit
+                0x00000000        0xc uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_ReadOutputData
+                0x00000000        0x6 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_WriteBit
+                0x00000000        0xa uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_Write
+                0x00000000        0x4 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_ToggleBits
+                0x00000000        0x8 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text.GPIO_PinAFConfig
+                0x00000000       0x24 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .text          0x00000000        0x0 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .data          0x00000000        0x0 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .bss           0x00000000        0x0 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .text.BoardConsolePrintf
+                0x00000000        0x6 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .text.BoardConsoleVPrintf
+                0x00000000        0x2 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .text          0x00000000        0x0 uC-sdk/os/libos.a(hooks.o)
+ .data          0x00000000        0x0 uC-sdk/os/libos.a(hooks.o)
+ .bss           0x00000000        0x0 uC-sdk/os/libos.a(hooks.o)
+ .text.vConfigureTimerForRunTimeStats
+                0x00000000        0xc uC-sdk/os/libos.a(hooks.o)
+ .text.vApplicationIdleHook
+                0x00000000        0x2 uC-sdk/os/libos.a(hooks.o)
+ .text          0x00000000        0x0 uC-sdk/libc/libc.a(malloc.o)
+ .data          0x00000000        0x0 uC-sdk/libc/libc.a(malloc.o)
+ .bss           0x00000000        0x0 uC-sdk/libc/libc.a(malloc.o)
+ .text.base_malloc
+                0x00000000       0xbc uC-sdk/libc/libc.a(malloc.o)
+ .text.base_realloc
+                0x00000000       0x94 uC-sdk/libc/libc.a(malloc.o)
+ .text.base_free
+                0x00000000       0x6c uC-sdk/libc/libc.a(malloc.o)
+ .text.__builtin_new
+                0x00000000       0x10 uC-sdk/libc/libc.a(malloc.o)
+ .text.__builtin_delete
+                0x00000000       0x10 uC-sdk/libc/libc.a(malloc.o)
+ .data.malloc   0x00000000        0x4 uC-sdk/libc/libc.a(malloc.o)
+ .bss.head      0x00000000        0x4 uC-sdk/libc/libc.a(malloc.o)
+ .bss.tail      0x00000000        0x4 uC-sdk/libc/libc.a(malloc.o)
+ .bss.heap_base
+                0x00000000        0x4 uC-sdk/libc/libc.a(malloc.o)
+ .data.realloc  0x00000000        0x4 uC-sdk/libc/libc.a(malloc.o)
+ .data.free     0x00000000        0x4 uC-sdk/libc/libc.a(malloc.o)
+ .text          0x00000000        0x0 uC-sdk/os/libos.a(sbrk.o)
+ .data          0x00000000        0x0 uC-sdk/os/libos.a(sbrk.o)
+ .bss           0x00000000        0x0 uC-sdk/os/libos.a(sbrk.o)
+ .text.sbrk     0x00000000       0x38 uC-sdk/os/libos.a(sbrk.o)
+ .data.heap_end
+                0x00000000        0x4 uC-sdk/os/libos.a(sbrk.o)
+ .text          0x00000000        0x0 uC-sdk/libc/libc.a(errno.o)
+ .data          0x00000000        0x0 uC-sdk/libc/libc.a(errno.o)
+ .bss           0x00000000        0x0 uC-sdk/libc/libc.a(errno.o)
+ .bss.errno     0x00000000        0x1 uC-sdk/libc/libc.a(errno.o)
+ .text          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+ .data          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+ .bss           0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x00100000         xr
+ram              0x20000000         0x0001c000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+LOAD test.o
+START GROUP
+LOAD uC-sdk/FreeRTOS/libFreeRTOS.a
+LOAD uC-sdk/arch/libarch.a
+LOAD uC-sdk/os/libos.a
+LOAD uC-sdk/libc/libc.a
+LOAD uC-sdk/libm/libm.a
+LOAD uC-sdk/acorn/libacorn.a
+LOAD uC-sdk/hardware/libhardware.a
+END GROUP
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/libgcc.a
+END GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/libgcc.a
+END GROUP
+                0x2001c000                PROVIDE (__cs3_stack, (__cs3_region_start_ram + __cs3_region_size_ram))
+                0x4001c0c0                PROVIDE (__cs3_stack_size, ((__cs3_region_start_ram + __cs3_region_size_ram) - _end))
+                0x20000340                PROVIDE (__cs3_heap_start, _end)
+                0x2001c000                PROVIDE (__cs3_heap_end, (__cs3_region_start_ram + __cs3_region_size_ram))
+                0x00000200                PROVIDE (__rom_data_len, (__rom_data_end - __rom_data_begin))
+                0x20000340                PROVIDE (__heap_start, __cs3_heap_start)
+                0x20001340                PROVIDE (__heap_end, __cs3_heap_end)
+                0x00000140                PROVIDE (__bss_ram_len, (__bss_ram_end - __bss_ram_begin))
+                0x000001c0                PROVIDE (__registry_space_1_len, (__registry_space_1_end - __registry_space_1))
+                0x00000258                PROVIDE (__registry_space_2_len, (__registry_space_2_end - __registry_space_2))
+                0x00000800                PROVIDE (__registry_space_3_len, (__registry_space_3_end - __registry_space_3))
+
+.text           0x08000000     0x1dc0
+                0x08000000                . = ALIGN (0x20)
+ CREATE_OBJECT_SYMBOLS
+                0x08000000                __cs3_region_start_rom = .
+                0x08000000                __privileged_code_start__ = .
+ *(.cs3.region-head.rom)
+                0x08000000                __cs3_interrupt_vector = __cs3_interrupt_vector_cortex_m
+ *(.cs3.interrupt_vector)
+ .cs3.interrupt_vector
+                0x08000000       0x20 uC-sdk/arch/libarch.a(startup.o)
+                0x08000000                __cs3_interrupt_vector_cortex_m
+                0x00000001                ASSERT ((. != __cs3_interrupt_vector_cortex_m), No interrupt vector)
+ *(.rom)
+ *(.rom.b)
+                0x08000020                __registry_space_1 = .
+ *(.registry_space_1)
+                0x000001e0                . = 0x1e0
+ *fill*         0x08000020      0x1c0 
+                0x080001e0                __registry_space_1_end = .
+ *(.bootptr)
+ .bootptr       0x080001e0        0x4 uC-sdk/arch/libarch.a(init.o)
+                0x080001e0                __bootptr
+ *(.hwregistry)
+                0x080001e4                __registry_space_2 = .
+ *(.registry_space_2)
+                0x0000043c                . = 0x43c
+ *fill*         0x080001e4      0x258 
+                0x0800043c                __registry_space_2_end = .
+ *(.som)
+ .som           0x0800043c        0x4 uC-sdk/arch/libarch.a(init.o)
+                0x0800043c                __som
+                0x08000440                __registry_space_3 = .
+ *(.registry)
+ *(.registry_space_3)
+                0x00000c40                . = 0xc40
+ *fill*         0x08000440      0x800 
+                0x08000c40                __registry_space_3_end = .
+ *(.privileged_code)
+ *(privileged_functions)
+                0x08000c40                __privileged_code_end__ = .
+                0x08000c40                __privileged_functions_end__ = .
+                0x08000c40                __cs3_reset = __cs3_reset_cortex_m
+ *(.cs3.reset)
+ .cs3.reset     0x08000c40       0x38 uC-sdk/arch/libarch.a(startup.o)
+                0x08000c40                __cs3_reset_cortex_m
+                0x00000001                ASSERT ((. != __cs3_reset), No reset code)
+ *(.handlers)
+ .handlers      0x08000c78       0x44 uC-sdk/arch/libarch.a(startup.o)
+                0x08000cb8                DebugMon_Handler
+                0x08000cba                RTC_Alarm_IRQHandler
+                0x08000cba                HASH_RNG_IRQHandler
+                0x08000cba                EXTI2_IRQHandler
+                0x08000cba                TIM8_CC_IRQHandler
+                0x08000cba                TIM1_CC_IRQHandler
+                0x08000cba                DMA2_Stream5_IRQHandler
+                0x08000cba                DMA1_Stream5_IRQHandler
+                0x08000cba                PVD_IRQHandler
+                0x08000cba                SDIO_IRQHandler
+                0x08000cba                TAMP_STAMP_IRQHandler
+                0x08000cba                CAN2_RX1_IRQHandler
+                0x08000cba                EXTI3_IRQHandler
+                0x08000cba                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000cba                TIM1_UP_TIM10_IRQHandler
+                0x08000cba                TIM8_UP_TIM13_IRQHandler
+                0x08000cba                I2C3_ER_IRQHandler
+                0x08000cba                EXTI0_IRQHandler
+                0x08000cba                I2C2_EV_IRQHandler
+                0x08000cba                DMA1_Stream2_IRQHandler
+                0x08000cba                CAN1_RX0_IRQHandler
+                0x08000cba                FPU_IRQHandler
+                0x08000cba                OTG_HS_WKUP_IRQHandler
+                0x08000cba                CAN2_SCE_IRQHandler
+                0x08000cba                DMA2_Stream2_IRQHandler
+                0x08000cba                SPI1_IRQHandler
+                0x08000cba                TIM6_DAC_IRQHandler
+                0x08000cba                TIM1_BRK_TIM9_IRQHandler
+                0x08000cba                DCMI_IRQHandler
+                0x08000cba                CAN2_RX0_IRQHandler
+                0x08000cba                DMA2_Stream3_IRQHandler
+                0x08000cba                USART6_IRQHandler
+                0x08000cba                USART3_IRQHandler
+                0x08000cba                CRYP_IRQHandler
+                0x08000cba                CAN1_RX1_IRQHandler
+                0x08000cba                UART5_IRQHandler
+                0x08000cba                DMA2_Stream0_IRQHandler
+                0x08000cba                TIM4_IRQHandler
+                0x08000cba                I2C1_EV_IRQHandler
+                0x08000cba                DMA1_Stream6_IRQHandler
+                0x08000cba                DMA1_Stream1_IRQHandler
+                0x08000cba                UART4_IRQHandler
+                0x08000cba                TIM3_IRQHandler
+                0x08000cba                RCC_IRQHandler
+                0x08000cba                TIM8_BRK_TIM12_IRQHandler
+                0x08000cba                Default_Handler
+                0x08000cba                EXTI15_10_IRQHandler
+                0x08000cba                ADC_IRQHandler
+                0x08000cba                DMA1_Stream7_IRQHandler
+                0x08000cba                TIM7_IRQHandler
+                0x08000cba                CAN2_TX_IRQHandler
+                0x08000cba                TIM5_IRQHandler
+                0x08000cba                DMA2_Stream7_IRQHandler
+                0x08000cba                I2C3_EV_IRQHandler
+                0x08000cba                EXTI9_5_IRQHandler
+                0x08000cba                RTC_WKUP_IRQHandler
+                0x08000cba                ETH_WKUP_IRQHandler
+                0x08000cba                SPI2_IRQHandler
+                0x08000cba                OTG_HS_EP1_IN_IRQHandler
+                0x08000cba                DMA1_Stream0_IRQHandler
+                0x08000cba                WDT_IRQHandler
+                0x08000cba                CAN1_TX_IRQHandler
+                0x08000cba                EXTI4_IRQHandler
+                0x08000cba                FSMC_IRQHandler
+                0x08000cba                ETH_IRQHandler
+                0x08000cba                OTG_HS_EP1_OUT_IRQHandler
+                0x08000cba                TIM2_IRQHandler
+                0x08000cba                OTG_FS_WKUP_IRQHandler
+                0x08000cba                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000cba                OTG_HS_IRQHandler
+                0x08000cba                EXTI1_IRQHandler
+                0x08000cba                USART2_IRQHandler
+                0x08000cba                I2C2_ER_IRQHandler
+                0x08000cba                DMA2_Stream1_IRQHandler
+                0x08000cba                CAN1_SCE_IRQHandler
+                0x08000cba                FLASH_IRQHandler
+                0x08000cba                DMA2_Stream4_IRQHandler
+                0x08000cba                USART1_IRQHandler
+                0x08000cba                OTG_FS_IRQHandler
+                0x08000cba                SPI3_IRQHandler
+                0x08000cba                DMA1_Stream4_IRQHandler
+                0x08000cba                I2C1_ER_IRQHandler
+                0x08000cba                DMA2_Stream6_IRQHandler
+                0x08000cba                DMA1_Stream3_IRQHandler
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.startup.main
+                0x08000cbc       0xdc test.o
+                0x08000cbc                main
+ .text.general_C_handler
+                0x08000d98      0x1d0 uC-sdk/arch/libarch.a(handlers.o)
+                0x08000d98                general_C_handler
+ .text.cpu_deinit_all
+                0x08000f68       0x1e uC-sdk/arch/libarch.a(init.o)
+                0x08000f68                cpu_deinit_all
+ .text.cpu_early_init
+                0x08000f86        0xe uC-sdk/arch/libarch.a(init.o)
+                0x08000f86                cpu_early_init
+ .text.cpu_init
+                0x08000f94       0x10 uC-sdk/arch/libarch.a(init.o)
+                0x08000f94                cpu_init
+ .text.cpu_late_init
+                0x08000fa4        0x2 uC-sdk/arch/libarch.a(init.o)
+                0x08000fa4                cpu_late_init
+ .text.BoardEarlyInit
+                0x08000fa6        0x2 uC-sdk/arch/libarch.a(BoardInit.o)
+                0x08000fa6                BoardEarlyInit
+ .text.BoardInit
+                0x08000fa8       0x1c uC-sdk/arch/libarch.a(BoardInit.o)
+                0x08000fa8                BoardInit
+ .text.BoardLateInit
+                0x08000fc4        0x2 uC-sdk/arch/libarch.a(BoardInit.o)
+                0x08000fc4                BoardLateInit
+ .text.BoardExceptionHandler
+                0x08000fc6        0x2 uC-sdk/arch/libarch.a(BoardInit.o)
+                0x08000fc6                BoardExceptionHandler
+ .text.SystemInit
+                0x08000fc8      0x118 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+                0x08000fc8                SystemInit
+ .text.SystemCoreClockUpdate
+                0x080010e0       0x74 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+                0x080010e0                SystemCoreClockUpdate
+ .text.DAC_DeInit
+                0x08001154       0x1a uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+                0x08001154                DAC_DeInit
+ *fill*         0x0800116e        0x2 
+ .text.EXTI_DeInit
+                0x08001170       0x1c uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+                0x08001170                EXTI_DeInit
+ .text.PWR_DeInit
+                0x0800118c       0x1a uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+                0x0800118c                PWR_DeInit
+ *fill*         0x080011a6        0x2 
+ .text.RCC_DeInit
+                0x080011a8       0x48 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+                0x080011a8                RCC_DeInit
+ .text.RCC_AHB1PeriphClockCmd
+                0x080011f0       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+                0x080011f0                RCC_AHB1PeriphClockCmd
+ .text.RCC_APB1PeriphResetCmd
+                0x08001208       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+                0x08001208                RCC_APB1PeriphResetCmd
+ .text.RCC_APB2PeriphResetCmd
+                0x08001220       0x18 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+                0x08001220                RCC_APB2PeriphResetCmd
+ .text.SDIO_DeInit
+                0x08001238       0x1a uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+                0x08001238                SDIO_DeInit
+ .text.WWDG_DeInit
+                0x08001252       0x1a uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+                0x08001252                WWDG_DeInit
+ .text.NVIC_SetVectorTable
+                0x0800126c       0x14 uC-sdk/arch/libarch.a(misc.o)
+                0x0800126c                NVIC_SetVectorTable
+ .text._start   0x08001280       0x3c uC-sdk/os/libos.a(init.o)
+                0x08001280                _start
+ .text.startup_memcpy
+                0x080012bc       0x12 uC-sdk/os/libos.a(init.o)
+                0x080012bc                startup_memcpy
+ .text.startup_memset
+                0x080012ce        0xe uC-sdk/os/libos.a(init.o)
+                0x080012ce                startup_memset
+ .text.dbgput   0x080012dc       0x16 uC-sdk/os/libos.a(osdebug.o)
+ *fill*         0x080012f2        0x2 
+ .text.osDbgPrintf
+                0x080012f4      0x1f4 uC-sdk/os/libos.a(osdebug.o)
+                0x080012f4                osDbgPrintf
+ .text.exit     0x080014e8       0x48 uC-sdk/libc/libc.a(initfini.o)
+                0x080014e8                exit
+ .text.libc_init
+                0x08001530       0x58 uC-sdk/libc/libc.a(initfini.o)
+                0x08001530                libc_init
+ .text.__sinit  0x08001588       0x28 uC-sdk/libc/libc.a(stdio.o)
+                0x08001588                __sinit
+ .text.startup.init_main_thread
+                0x080015b0       0x10 uC-sdk/libc/libc.a(reent.o)
+ .text.gpio_config
+                0x080015c0       0x4c uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+                0x080015c0                gpio_config
+ .text.gpio_set
+                0x0800160c       0x28 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+                0x0800160c                gpio_set
+ .text.gpio_get
+                0x08001634       0x1c uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+                0x08001634                gpio_get
+ .text.SVC_Handler
+                0x08001650       0x1c uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                0x08001650                SVC_Handler
+ .text.ulPortSetInterruptMask
+                0x0800166c       0x10 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                0x0800166c                ulPortSetInterruptMask
+ .text.vPortClearInterruptMask
+                0x0800167c        0x6 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                0x0800167c                vPortClearInterruptMask
+ *fill*         0x08001682        0x2 
+ .text.PendSV_Handler
+                0x08001684       0x50 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                0x08001684                PendSV_Handler
+ .text.SysTick_Handler
+                0x080016d4       0x24 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                0x080016d4                SysTick_Handler
+ .text.xTaskIncrementTick
+                0x080016f8      0x12c uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+                0x080016f8                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x08001824       0xa8 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+                0x08001824                vTaskSwitchContext
+ .text.vListInsertEnd
+                0x080018cc       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+                0x080018cc                vListInsertEnd
+ .text.uxListRemove
+                0x080018e4       0x24 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+                0x080018e4                uxListRemove
+ .text.GPIO_Init
+                0x08001908       0x6e uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+                0x08001908                GPIO_Init
+ .text.GPIO_ReadInputDataBit
+                0x08001976        0xc uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+                0x08001976                GPIO_ReadInputDataBit
+ .text.GPIO_SetBits
+                0x08001982        0x4 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+                0x08001982                GPIO_SetBits
+ .text.GPIO_ResetBits
+                0x08001986        0x4 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+                0x08001986                GPIO_ResetBits
+ .text.BoardConsoleInit
+                0x0800198a        0x2 uC-sdk/arch/libarch.a(BoardConsole.o)
+                0x0800198a                BoardConsoleInit
+ .text.BoardConsolePuts
+                0x0800198c        0x2 uC-sdk/arch/libarch.a(BoardConsole.o)
+                0x0800198c                BoardConsolePuts
+ .text.BoardConsolePutc
+                0x0800198e        0x2 uC-sdk/arch/libarch.a(BoardConsole.o)
+                0x0800198e                BoardConsolePutc
+ .text.vApplicationTickHook
+                0x08001990        0x2 uC-sdk/os/libos.a(hooks.o)
+                0x08001990                vApplicationTickHook
+ *fill*         0x08001992        0x2 
+ .text.vApplicationStackOverflowHook
+                0x08001994       0x10 uC-sdk/os/libos.a(hooks.o)
+                0x08001994                vApplicationStackOverflowHook
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x080019a4      0x301 uC-sdk/arch/libarch.a(handlers.o)
+ .rodata.str1.1
+                0x08001ca5       0x36 uC-sdk/os/libos.a(init.o)
+ .rodata.str1.1
+                0x08001cdb       0x20 uC-sdk/os/libos.a(osdebug.o)
+                                 0x24 (size before relaxing)
+ .rodata.hex_conv
+                0x08001cfb       0x11 uC-sdk/os/libos.a(osdebug.o)
+ .rodata.ucExpectedStackBytes.8145
+                0x08001d0c       0x14 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .rodata.str1.1
+                0x08001d20       0x4b uC-sdk/os/libos.a(hooks.o)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+                0x08001d70                . = ALIGN (0x10)
+ *fill*         0x08001d6b        0x5 
+ *(.init)
+ .init          0x08001d70        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+                0x08001d70                _init
+ .init          0x08001d74        0x8 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+                0x08001d80                . = ALIGN (0x10)
+ *fill*         0x08001d7c        0x4 
+                0x08001d80                __preinit_array_start = .
+ *(.preinit_array)
+                0x08001d80                __preinit_array_end = .
+                0x08001d80                . = ALIGN (0x10)
+                0x08001d80                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x08001d80        0x4 uC-sdk/libc/libc.a(reent.o)
+                0x08001d84                __init_array_end = .
+                0x08001d90                . = ALIGN (0x10)
+ *fill*         0x08001d84        0xc 
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x08001d90                . = ALIGN (0x10)
+ *(.fini)
+ .fini          0x08001d90        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+                0x08001d90                _fini
+ .fini          0x08001d94        0x8 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+                0x08001da0                . = ALIGN (0x10)
+ *fill*         0x08001d9c        0x4 
+                0x08001da0                __fini_array_start = .
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x08001da0                __fini_array_end = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x08001da0                . = ALIGN (0x10)
+                0x08001da0                __cs3_regions = .
+                0x08001da0        0x4 LONG 0x0
+                0x08001da4        0x4 LONG 0x8001de0 __cs3_region_init_ram
+                0x08001da8        0x4 LONG 0x20000000 __cs3_region_start_ram
+                0x08001dac        0x4 LONG 0x200 __cs3_region_init_size_ram
+                0x08001db0        0x4 LONG 0x140 __cs3_region_zero_size_ram
+                0x08001dc0                . = ALIGN (0x10)
+ *fill*         0x08001db4        0xc 
+ *(.romfs.data)
+                0x08001dc0                __exidx_start = .
+
+.v4_bx          0x08001dc0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08001dc0        0x0
+ .iplt          0x00000000        0x0 test.o
+
+.ARM.exidx      0x08001dc0        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.cs3.reset
+                0x08001dc0        0x8 uC-sdk/arch/libarch.a(startup.o)
+                0x08001dc8                __exidx_end = .
+
+.rel.dyn        0x08001dc8        0x0
+ .rel.iplt      0x00000000        0x0 test.o
+
+.text.align     0x08001dc8        0x0
+                0x08001dc8                . = ALIGN (0x8)
+                0x08001dc8                _etext = .
+                0x00100000                __cs3_region_size_rom = 0x100000
+                0x00000001                __cs3_region_num = 0x1
+
+.data_begin     0x08001dc8       0x18
+                0x08001de0                . = ALIGN (0x20)
+ *fill*         0x08001dc8       0x18 
+                0x08001de0                __rom_data_begin = .
+
+.data           0x20000000      0x200 load address 0x08001de0
+                0x20000000                __cs3_region_start_ram = .
+                0x20000000                __ram_data_begin = .
+                0x20000000                __privileged_data_start__ = .
+                0x20000000                __cs3_interrupt_vector_mutable = __cs3_interrupt_vector_cortex_m_mutable
+ *(.cs3.interrupt_vector_mutable)
+ .cs3.interrupt_vector_mutable
+                0x20000000      0x188 uC-sdk/arch/libarch.a(startup.o)
+                0x20000000                __cs3_interrupt_vector_cortex_m_mutable
+                0x00000001                ASSERT ((. != __cs3_interrupt_vector_cortex_m_mutable), No interrupt vector mutable table)
+ *(privileged_data)
+                0x20000188                __privileged_data_end__ = .
+ *(.cs3.region-head.ram)
+ *(.jcr)
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.ledStart
+                0x20000188        0x2 test.o
+                0x20000188                ledStart
+ .data.ledJ1    0x2000018a        0x2 test.o
+                0x2000018a                ledJ1
+ .data.ledJ2    0x2000018c        0x2 test.o
+                0x2000018c                ledJ2
+ .data.J1       0x2000018e        0x2 test.o
+                0x2000018e                J1
+ .data.J2       0x20000190        0x2 test.o
+                0x20000190                J2
+ .data.AHBPrescTable
+                0x20000192       0x10 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+                0x20000192                AHBPrescTable
+ *fill*         0x200001a2        0x2 
+ .data.SystemCoreClock
+                0x200001a4        0x4 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+                0x200001a4                SystemCoreClock
+ .data.stdin    0x200001a8        0x4 uC-sdk/libc/libc.a(stdio.o)
+                0x200001a8                stdin
+ .data.stdout   0x200001ac        0x4 uC-sdk/libc/libc.a(stdio.o)
+                0x200001ac                stdout
+ .data.stderr   0x200001b0        0x4 uC-sdk/libc/libc.a(stdio.o)
+                0x200001b0                stderr
+ .data._impure_ptr
+                0x200001b4        0x4 uC-sdk/libc/libc.a(reent.o)
+                0x200001b4                _impure_ptr
+ .data.ports    0x200001b8       0x2c uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+                0x200001b8                ports
+ .data.xNextTaskUnblockTime
+                0x200001e4        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ *(.ram)
+                0x20000200                . = ALIGN (0x20)
+ *fill*         0x200001e8       0x18 
+                0x20000200                _edata = .
+
+.igot.plt       0x20000200        0x0 load address 0x08001fe0
+ .igot.plt      0x00000000        0x0 test.o
+
+.data_end       0x08001fe0        0x0
+                0x08001fe0                . = ALIGN (0x20)
+                0x08001fe0                __rom_data_end = .
+
+.bss            0x20000200      0x140
+                0x20000200                . = ALIGN (0x20)
+                0x20000200                __bss_ram_begin = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.atexit_funcs
+                0x20000200       0x80 uC-sdk/libc/libc.a(initfini.o)
+ .bss.atexit_count
+                0x20000280        0x1 uC-sdk/libc/libc.a(initfini.o)
+ *fill*         0x20000281        0x3 
+ .bss._stdin    0x20000284        0x8 uC-sdk/libc/libc.a(stdio.o)
+ .bss._stderr   0x2000028c        0x8 uC-sdk/libc/libc.a(stdio.o)
+ .bss._stdout   0x20000294        0x8 uC-sdk/libc/libc.a(stdio.o)
+ .bss.main_thread
+                0x2000029c        0x1 uC-sdk/libc/libc.a(reent.o)
+ *fill*         0x2000029d        0x3 
+ .bss.pxDelayedTaskList
+                0x200002a0        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.uxPendedTicks
+                0x200002a4        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.pxReadyTasksLists
+                0x200002a8       0x64 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.uxSchedulerSuspended
+                0x2000030c        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xNumOfOverflows
+                0x20000310        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.pxCurrentTCB
+                0x20000314        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+                0x20000314                pxCurrentTCB
+ .bss.xTickCount
+                0x20000318        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.pxOverflowDelayedTaskList
+                0x2000031c        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.uxTopReadyPriority
+                0x20000320        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .bss.xYieldPending
+                0x20000324        0x4 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ *(COMMON)
+ *(.ram.b)
+                0x20000340                . = ALIGN (0x20)
+ *fill*         0x20000328       0x18 
+                0x20000340                __bss_ram_end = .
+                0x20000340                _end = .
+                0x20000340                __end = .
+
+.heap           0x20000340     0x1000
+ *(.heap)
+ .heap          0x20000340     0x1000 uC-sdk/arch/libarch.a(startup.o)
+                0x20000340                __cs3_heap_start
+                0x20001340                __cs3_heap_end
+
+.stack          0x2001bf00      0x100
+ *(.stack)
+ .stack         0x2001bf00      0x100 uC-sdk/arch/libarch.a(startup.o)
+                0x2001bf00                __stack_start
+                0x2001bf00                __cs3_stack_mem
+                0x2001c000                _estack = .
+                0x2001c000                PROVIDE (estack, .)
+                0x08001de0                __cs3_region_init_ram = LOADADDR (.data)
+                0x00000200                __cs3_region_init_size_ram = (_edata - __cs3_region_start_ram)
+                0x00000140                __cs3_region_zero_size_ram = (_end - _edata)
+                0x0001c000                __cs3_region_size_ram = 0x1c000
+                0x00000001                __cs3_region_num = 0x1
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xbb8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 test.o
+ .debug_aranges
+                0x00000020       0x28 uC-sdk/arch/libarch.a(startup.o)
+ .debug_aranges
+                0x00000048       0x20 uC-sdk/arch/libarch.a(handlers.o)
+ .debug_aranges
+                0x00000068       0x38 uC-sdk/arch/libarch.a(init.o)
+ .debug_aranges
+                0x000000a0       0x40 uC-sdk/arch/libarch.a(BoardInit.o)
+ .debug_aranges
+                0x000000e0       0x28 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_aranges
+                0x00000108       0xa0 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_aranges
+                0x000001a8       0x58 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_aranges
+                0x00000200       0x98 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_aranges
+                0x00000298      0x1b8 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_aranges
+                0x00000450      0x108 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_aranges
+                0x00000558       0x58 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_aranges
+                0x000005b0       0x40 uC-sdk/arch/libarch.a(misc.o)
+ .debug_aranges
+                0x000005f0       0x38 uC-sdk/os/libos.a(init.o)
+ .debug_aranges
+                0x00000628       0x28 uC-sdk/os/libos.a(osdebug.o)
+ .debug_aranges
+                0x00000650       0x30 uC-sdk/libc/libc.a(initfini.o)
+ .debug_aranges
+                0x00000680       0x20 uC-sdk/libc/libc.a(stdio.o)
+ .debug_aranges
+                0x000006a0       0x20 uC-sdk/libc/libc.a(reent.o)
+ .debug_aranges
+                0x000006c0       0x40 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_aranges
+                0x00000700       0x98 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_aranges
+                0x00000798      0x110 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_aranges
+                0x000008a8       0x60 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_aranges
+                0x00000908       0x28 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_aranges
+                0x00000930       0x40 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_aranges
+                0x00000970       0xd0 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_aranges
+                0x00000a40       0x88 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_aranges
+                0x00000ac8       0x40 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .debug_aranges
+                0x00000b08       0x38 uC-sdk/os/libos.a(hooks.o)
+ .debug_aranges
+                0x00000b40       0x40 uC-sdk/libc/libc.a(malloc.o)
+ .debug_aranges
+                0x00000b80       0x20 uC-sdk/os/libos.a(sbrk.o)
+ .debug_aranges
+                0x00000ba0       0x18 uC-sdk/libc/libc.a(errno.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xdf7e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x243 test.o
+ .debug_info    0x00000243       0x65 uC-sdk/arch/libarch.a(startup.o)
+ .debug_info    0x000002a8      0x6b5 uC-sdk/arch/libarch.a(handlers.o)
+ .debug_info    0x0000095d      0x1cf uC-sdk/arch/libarch.a(init.o)
+ .debug_info    0x00000b2c      0x2e0 uC-sdk/arch/libarch.a(BoardInit.o)
+ .debug_info    0x00000e0c      0x5b6 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_info    0x000013c2      0x66c uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_info    0x00001a2e      0x328 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_info    0x00001d56      0x5f9 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_info    0x0000234f      0xe34 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_info    0x00003183      0x81c uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_info    0x0000399f      0x281 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_info    0x00003c20      0x524 uC-sdk/arch/libarch.a(misc.o)
+ .debug_info    0x00004144      0x83e uC-sdk/os/libos.a(init.o)
+ .debug_info    0x00004982      0x861 uC-sdk/os/libos.a(osdebug.o)
+ .debug_info    0x000051e3      0x6ad uC-sdk/libc/libc.a(initfini.o)
+ .debug_info    0x00005890      0x544 uC-sdk/libc/libc.a(stdio.o)
+ .debug_info    0x00005dd4      0x42c uC-sdk/libc/libc.a(reent.o)
+ .debug_info    0x00006200      0x4c6 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_info    0x000066c6      0x3ad uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_info    0x00006a73     0x1ccb uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_info    0x0000873e     0x128a uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_info    0x000099c8      0x5a8 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_info    0x00009f70      0x6ee uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_info    0x0000a65e     0x18d7 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_info    0x0000bf35      0x71b uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_info    0x0000c650      0x5b9 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .debug_info    0x0000cc09      0x16c uC-sdk/os/libos.a(hooks.o)
+ .debug_info    0x0000cd75      0x8a4 uC-sdk/libc/libc.a(malloc.o)
+ .debug_info    0x0000d619      0x5c1 uC-sdk/os/libos.a(sbrk.o)
+ .debug_info    0x0000dbda      0x3a4 uC-sdk/libc/libc.a(errno.o)
+
+.debug_abbrev   0x00000000     0x3452
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xe9 test.o
+ .debug_abbrev  0x000000e9       0x12 uC-sdk/arch/libarch.a(startup.o)
+ .debug_abbrev  0x000000fb      0x21d uC-sdk/arch/libarch.a(handlers.o)
+ .debug_abbrev  0x00000318      0x11a uC-sdk/arch/libarch.a(init.o)
+ .debug_abbrev  0x00000432      0x10f uC-sdk/arch/libarch.a(BoardInit.o)
+ .debug_abbrev  0x00000541      0x145 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_abbrev  0x00000686      0x1d2 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_abbrev  0x00000858      0x1c5 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_abbrev  0x00000a1d      0x1c6 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_abbrev  0x00000be3      0x1e2 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_abbrev  0x00000dc5      0x1af uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_abbrev  0x00000f74      0x178 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_abbrev  0x000010ec      0x156 uC-sdk/arch/libarch.a(misc.o)
+ .debug_abbrev  0x00001242      0x20c uC-sdk/os/libos.a(init.o)
+ .debug_abbrev  0x0000144e      0x216 uC-sdk/os/libos.a(osdebug.o)
+ .debug_abbrev  0x00001664      0x212 uC-sdk/libc/libc.a(initfini.o)
+ .debug_abbrev  0x00001876      0x127 uC-sdk/libc/libc.a(stdio.o)
+ .debug_abbrev  0x0000199d       0xe0 uC-sdk/libc/libc.a(reent.o)
+ .debug_abbrev  0x00001a7d      0x201 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_abbrev  0x00001c7e      0x21a uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_abbrev  0x00001e98      0x3ae uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_abbrev  0x00002246      0x34d uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_abbrev  0x00002593      0x1a6 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_abbrev  0x00002739      0x161 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_abbrev  0x0000289a      0x378 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_abbrev  0x00002c12      0x1e8 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_abbrev  0x00002dfa      0x12f uC-sdk/arch/libarch.a(BoardConsole.o)
+ .debug_abbrev  0x00002f29       0xf6 uC-sdk/os/libos.a(hooks.o)
+ .debug_abbrev  0x0000301f      0x260 uC-sdk/libc/libc.a(malloc.o)
+ .debug_abbrev  0x0000327f      0x18a uC-sdk/os/libos.a(sbrk.o)
+ .debug_abbrev  0x00003409       0x49 uC-sdk/libc/libc.a(errno.o)
+
+.debug_line     0x00000000     0x480d
+ *(.debug_line)
+ .debug_line    0x00000000       0xd7 test.o
+ .debug_line    0x000000d7       0x84 uC-sdk/arch/libarch.a(startup.o)
+ .debug_line    0x0000015b      0x16f uC-sdk/arch/libarch.a(handlers.o)
+ .debug_line    0x000002ca      0x240 uC-sdk/arch/libarch.a(init.o)
+ .debug_line    0x0000050a      0x1a5 uC-sdk/arch/libarch.a(BoardInit.o)
+ .debug_line    0x000006af      0x166 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_line    0x00000815      0x318 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_line    0x00000b2d      0x248 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_line    0x00000d75      0x307 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_line    0x0000107c      0x5cc uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_line    0x00001648      0x416 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_line    0x00001a5e      0x233 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_line    0x00001c91      0x1fa uC-sdk/arch/libarch.a(misc.o)
+ .debug_line    0x00001e8b      0x1a0 uC-sdk/os/libos.a(init.o)
+ .debug_line    0x0000202b      0x229 uC-sdk/os/libos.a(osdebug.o)
+ .debug_line    0x00002254      0x13b uC-sdk/libc/libc.a(initfini.o)
+ .debug_line    0x0000238f       0xd0 uC-sdk/libc/libc.a(stdio.o)
+ .debug_line    0x0000245f       0x85 uC-sdk/libc/libc.a(reent.o)
+ .debug_line    0x000024e4      0x23c uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_line    0x00002720      0x35e uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_line    0x00002a7e      0x75d uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_line    0x000031db      0x361 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_line    0x0000353c      0x1a9 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_line    0x000036e5      0x243 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_line    0x00003928      0x5d6 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_line    0x00003efe      0x2f5 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_line    0x000041f3      0x148 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .debug_line    0x0000433b      0x176 uC-sdk/os/libos.a(hooks.o)
+ .debug_line    0x000044b1      0x1b2 uC-sdk/libc/libc.a(malloc.o)
+ .debug_line    0x00004663      0x141 uC-sdk/os/libos.a(sbrk.o)
+ .debug_line    0x000047a4       0x69 uC-sdk/libc/libc.a(errno.o)
+
+.debug_frame    0x00000000     0x17f4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x38 test.o
+ .debug_frame   0x00000038       0x34 uC-sdk/arch/libarch.a(handlers.o)
+ .debug_frame   0x0000006c       0x60 uC-sdk/arch/libarch.a(init.o)
+ .debug_frame   0x000000cc       0x60 uC-sdk/arch/libarch.a(BoardInit.o)
+ .debug_frame   0x0000012c       0x34 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_frame   0x00000160      0x140 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_frame   0x000002a0       0x98 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_frame   0x00000338      0x118 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_frame   0x00000450      0x36c uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_frame   0x000007bc      0x214 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_frame   0x000009d0       0x9c uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_frame   0x00000a6c       0x68 uC-sdk/arch/libarch.a(misc.o)
+ .debug_frame   0x00000ad4       0x68 uC-sdk/os/libos.a(init.o)
+ .debug_frame   0x00000b3c       0x5c uC-sdk/os/libos.a(osdebug.o)
+ .debug_frame   0x00000b98       0x5c uC-sdk/libc/libc.a(initfini.o)
+ .debug_frame   0x00000bf4       0x20 uC-sdk/libc/libc.a(stdio.o)
+ .debug_frame   0x00000c14       0x20 uC-sdk/libc/libc.a(reent.o)
+ .debug_frame   0x00000c34       0x7c uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_frame   0x00000cb0      0x13c uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_frame   0x00000dec      0x334 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_frame   0x00001120      0x11c uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_frame   0x0000123c       0x40 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_frame   0x0000127c       0x6c uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_frame   0x000012e8      0x28c uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_frame   0x00001574      0x114 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_frame   0x00001688       0x6c uC-sdk/arch/libarch.a(BoardConsole.o)
+ .debug_frame   0x000016f4       0x50 uC-sdk/os/libos.a(hooks.o)
+ .debug_frame   0x00001744       0x90 uC-sdk/libc/libc.a(malloc.o)
+ .debug_frame   0x000017d4       0x20 uC-sdk/os/libos.a(sbrk.o)
+
+.debug_str      0x00000000     0x390a
+ *(.debug_str)
+ .debug_str     0x00000000      0x20a test.o
+                                0x243 (size before relaxing)
+ .debug_str     0x0000020a      0x1b6 uC-sdk/arch/libarch.a(handlers.o)
+                                0x379 (size before relaxing)
+ .debug_str     0x000003c0       0xdd uC-sdk/arch/libarch.a(init.o)
+                                0x2dc (size before relaxing)
+ .debug_str     0x0000049d      0x177 uC-sdk/arch/libarch.a(BoardInit.o)
+                                0x396 (size before relaxing)
+ .debug_str     0x00000614       0xc5 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+                                0x468 (size before relaxing)
+ .debug_str     0x000006d9      0x2bd uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+                                0x4f2 (size before relaxing)
+ .debug_str     0x00000996      0x1a5 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+                                0x3e9 (size before relaxing)
+ .debug_str     0x00000b3b      0x1ad uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+                                0x479 (size before relaxing)
+ .debug_str     0x00000ce8      0x65f uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+                                0xa25 (size before relaxing)
+ .debug_str     0x00001347      0x45e uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+                                0x6ea (size before relaxing)
+ .debug_str     0x000017a5       0xbc uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+                                0x331 (size before relaxing)
+ .debug_str     0x00001861      0x19d uC-sdk/arch/libarch.a(misc.o)
+                                0x461 (size before relaxing)
+ .debug_str     0x000019fe      0x538 uC-sdk/os/libos.a(init.o)
+                                0x7a4 (size before relaxing)
+ .debug_str     0x00001f36       0xc1 uC-sdk/os/libos.a(osdebug.o)
+                                0x75c (size before relaxing)
+ .debug_str     0x00001ff7       0xfa uC-sdk/libc/libc.a(initfini.o)
+                                0x7a5 (size before relaxing)
+ .debug_str     0x000020f1       0x23 uC-sdk/libc/libc.a(stdio.o)
+                                0x6d5 (size before relaxing)
+ .debug_str     0x00002114       0x2d uC-sdk/libc/libc.a(reent.o)
+                                0x615 (size before relaxing)
+ .debug_str     0x00002141      0x220 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+                                0x47b (size before relaxing)
+ .debug_str     0x00002361      0x2a0 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+                                0x480 (size before relaxing)
+ .debug_str     0x00002601      0x843 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+                               0x1032 (size before relaxing)
+ .debug_str     0x00002e44      0x3c4 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+                                0xcd6 (size before relaxing)
+ .debug_str     0x00003208       0x36 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+                                0x72b (size before relaxing)
+ .debug_str     0x0000323e       0x56 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+                                0x7ff (size before relaxing)
+ .debug_str     0x00003294      0x375 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+                                0xdb3 (size before relaxing)
+ .debug_str     0x00003609      0x14b uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+                                0x54f (size before relaxing)
+ .debug_str     0x00003754       0x56 uC-sdk/arch/libarch.a(BoardConsole.o)
+                                0x751 (size before relaxing)
+ .debug_str     0x000037aa       0x47 uC-sdk/os/libos.a(hooks.o)
+                                0x28c (size before relaxing)
+ .debug_str     0x000037f1       0xb2 uC-sdk/libc/libc.a(malloc.o)
+                                0x75c (size before relaxing)
+ .debug_str     0x000038a3       0x5b uC-sdk/os/libos.a(sbrk.o)
+                                0x736 (size before relaxing)
+ .debug_str     0x000038fe        0xc uC-sdk/libc/libc.a(errno.o)
+                                0x5c8 (size before relaxing)
+
+.debug_loc      0x00000000     0x5868
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x95 test.o
+ .debug_loc     0x00000095       0xbc uC-sdk/arch/libarch.a(handlers.o)
+ .debug_loc     0x00000151       0xb7 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_loc     0x00000208      0x48d uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_loc     0x00000695      0x165 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_loc     0x000007fa      0x1c8 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_loc     0x000009c2      0xbcf uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_loc     0x00001591      0x217 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_loc     0x000017a8       0xd1 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_loc     0x00001879      0x147 uC-sdk/arch/libarch.a(misc.o)
+ .debug_loc     0x000019c0       0xfe uC-sdk/os/libos.a(init.o)
+ .debug_loc     0x00001abe      0x43a uC-sdk/os/libos.a(osdebug.o)
+ .debug_loc     0x00001ef8       0xf6 uC-sdk/libc/libc.a(initfini.o)
+ .debug_loc     0x00001fee      0x100 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_loc     0x000020ee       0xa7 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_loc     0x00002195     0x11e1 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_loc     0x00003376      0x69a uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_loc     0x00003a10       0x8c uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_loc     0x00003a9c       0x5d uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_loc     0x00003af9     0x141d uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_loc     0x00004f16      0x357 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_loc     0x0000526d       0x58 uC-sdk/os/libos.a(hooks.o)
+ .debug_loc     0x000052c5      0x51f uC-sdk/libc/libc.a(malloc.o)
+ .debug_loc     0x000057e4       0x84 uC-sdk/os/libos.a(sbrk.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x2e
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crti.o
+ .ARM.attributes
+                0x00000022       0x37 test.o
+ .ARM.attributes
+                0x00000059       0x25 uC-sdk/arch/libarch.a(startup.o)
+ .ARM.attributes
+                0x0000007e       0x37 uC-sdk/arch/libarch.a(handlers.o)
+ .ARM.attributes
+                0x000000b5       0x37 uC-sdk/arch/libarch.a(init.o)
+ .ARM.attributes
+                0x000000ec       0x37 uC-sdk/arch/libarch.a(BoardInit.o)
+ .ARM.attributes
+                0x00000123       0x37 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .ARM.attributes
+                0x0000015a       0x37 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .ARM.attributes
+                0x00000191       0x37 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .ARM.attributes
+                0x000001c8       0x37 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .ARM.attributes
+                0x000001ff       0x37 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .ARM.attributes
+                0x00000236       0x37 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .ARM.attributes
+                0x0000026d       0x37 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .ARM.attributes
+                0x000002a4       0x37 uC-sdk/arch/libarch.a(misc.o)
+ .ARM.attributes
+                0x000002db       0x37 uC-sdk/os/libos.a(init.o)
+ .ARM.attributes
+                0x00000312       0x37 uC-sdk/os/libos.a(osdebug.o)
+ .ARM.attributes
+                0x00000349       0x37 uC-sdk/libc/libc.a(initfini.o)
+ .ARM.attributes
+                0x00000380       0x37 uC-sdk/libc/libc.a(stdio.o)
+ .ARM.attributes
+                0x000003b7       0x37 uC-sdk/libc/libc.a(reent.o)
+ .ARM.attributes
+                0x000003ee       0x37 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .ARM.attributes
+                0x00000425       0x37 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .ARM.attributes
+                0x0000045c       0x37 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .ARM.attributes
+                0x00000493       0x37 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .ARM.attributes
+                0x000004ca       0x37 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .ARM.attributes
+                0x00000501       0x37 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .ARM.attributes
+                0x00000538       0x37 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .ARM.attributes
+                0x0000056f       0x37 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .ARM.attributes
+                0x000005a6       0x37 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .ARM.attributes
+                0x000005dd       0x37 uC-sdk/os/libos.a(hooks.o)
+ .ARM.attributes
+                0x00000614       0x37 uC-sdk/libc/libc.a(malloc.o)
+ .ARM.attributes
+                0x0000064b       0x37 uC-sdk/os/libos.a(sbrk.o)
+ .ARM.attributes
+                0x00000682       0x37 uC-sdk/libc/libc.a(errno.o)
+ .ARM.attributes
+                0x000006b9       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/softfp/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(test.elf elf32-littlearm)
+
+.debug_ranges   0x00000000      0xaa0
+ .debug_ranges  0x00000000       0x10 test.o
+ .debug_ranges  0x00000010       0x20 uC-sdk/arch/libarch.a(startup.o)
+ .debug_ranges  0x00000030       0x10 uC-sdk/arch/libarch.a(handlers.o)
+ .debug_ranges  0x00000040       0x28 uC-sdk/arch/libarch.a(init.o)
+ .debug_ranges  0x00000068       0x30 uC-sdk/arch/libarch.a(BoardInit.o)
+ .debug_ranges  0x00000098       0x30 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .debug_ranges  0x000000c8       0x90 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .debug_ranges  0x00000158       0x48 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .debug_ranges  0x000001a0       0x88 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .debug_ranges  0x00000228      0x1a8 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .debug_ranges  0x000003d0       0xf8 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .debug_ranges  0x000004c8       0x48 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .debug_ranges  0x00000510       0x30 uC-sdk/arch/libarch.a(misc.o)
+ .debug_ranges  0x00000540       0x28 uC-sdk/os/libos.a(init.o)
+ .debug_ranges  0x00000568       0x18 uC-sdk/os/libos.a(osdebug.o)
+ .debug_ranges  0x00000580       0x38 uC-sdk/libc/libc.a(initfini.o)
+ .debug_ranges  0x000005b8       0x10 uC-sdk/libc/libc.a(stdio.o)
+ .debug_ranges  0x000005c8       0x10 uC-sdk/libc/libc.a(reent.o)
+ .debug_ranges  0x000005d8       0x30 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .debug_ranges  0x00000608       0x88 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .debug_ranges  0x00000690      0x178 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .debug_ranges  0x00000808       0x80 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .debug_ranges  0x00000888       0x18 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .debug_ranges  0x000008a0       0x30 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .debug_ranges  0x000008d0       0xc0 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .debug_ranges  0x00000990       0x78 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .debug_ranges  0x00000a08       0x30 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .debug_ranges  0x00000a38       0x28 uC-sdk/os/libos.a(hooks.o)
+ .debug_ranges  0x00000a60       0x30 uC-sdk/libc/libc.a(malloc.o)
+ .debug_ranges  0x00000a90       0x10 uC-sdk/os/libos.a(sbrk.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 test.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(handlers.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(init.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(BoardInit.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(system_stm32f4xx.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_dac.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_exti.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_pwr.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_rcc.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_sdio.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_wwdg.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(misc.o)
+ .comment       0x00000000       0x71 uC-sdk/os/libos.a(init.o)
+ .comment       0x00000000       0x71 uC-sdk/os/libos.a(osdebug.o)
+ .comment       0x00000000       0x71 uC-sdk/libc/libc.a(initfini.o)
+ .comment       0x00000000       0x71 uC-sdk/libc/libc.a(stdio.o)
+ .comment       0x00000000       0x71 uC-sdk/libc/libc.a(reent.o)
+ .comment       0x00000000       0x71 uC-sdk/hardware/libhardware.a(gpio-stm32f4xx.o)
+ .comment       0x00000000       0x71 uC-sdk/FreeRTOS/libFreeRTOS.a(port.o)
+ .comment       0x00000000       0x71 uC-sdk/FreeRTOS/libFreeRTOS.a(tasks.o)
+ .comment       0x00000000       0x71 uC-sdk/FreeRTOS/libFreeRTOS.a(timers.o)
+ .comment       0x00000000       0x71 uC-sdk/FreeRTOS/libFreeRTOS.a(heap_3.o)
+ .comment       0x00000000       0x71 uC-sdk/FreeRTOS/libFreeRTOS.a(list.o)
+ .comment       0x00000000       0x71 uC-sdk/FreeRTOS/libFreeRTOS.a(queue.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(stm32f4xx_gpio.o)
+ .comment       0x00000000       0x71 uC-sdk/arch/libarch.a(BoardConsole.o)
+ .comment       0x00000000       0x71 uC-sdk/os/libos.a(hooks.o)
+ .comment       0x00000000       0x71 uC-sdk/libc/libc.a(malloc.o)
+ .comment       0x00000000       0x71 uC-sdk/os/libos.a(sbrk.o)
+ .comment       0x00000000       0x71 uC-sdk/libc/libc.a(errno.o)
